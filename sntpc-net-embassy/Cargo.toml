@@ -12,7 +12,7 @@ authors.workspace = true
 
 [dependencies]
 sntpc = { version = "~0.11", path = "../sntpc", default-features = false }
-embassy-net = { version = ">=0.9, <0.10", default-features = false, features = ["udp", "proto-ipv4", "medium-ip"] }
+embassy-net = { git = "https://github.com/embassy-rs/embassy", rev = "8256076", default-features = false, features = ["udp", "proto-ipv4", "medium-ip"] }
 
 cfg-if = { version = "1", optional = true }
 log = { version = "~0.4", optional = true }
